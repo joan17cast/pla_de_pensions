@@ -10,10 +10,10 @@ const rl = readline.createInterface({
 // * Logica
 
 function getTramRetencio(salariAnual:number): number {
-  const listVaremRetencio = [[12450, 20200], [20200, 35200], [35200, 60000], [60000, 300000]];
-  const trams = [24, 30, 37, 45];
   if (salariAnual < 12450) return 19;
   if (salariAnual > 300000) return 47;
+  const listVaremRetencio = [[12450, 20200], [20200, 35200], [35200, 60000], [60000, 300000]];
+  const trams = [24, 30, 37, 45];
   let index:number = 0;
   index = listVaremRetencio.findIndex((varem) => varem[0] > salariAnual && salariAnual < varem[1]);
   index -= 1;
