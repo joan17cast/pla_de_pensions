@@ -25,6 +25,10 @@
     ],
     "rules": {
         "no-console": "off",
+        "no-shadow": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/no-shadow": "error",
         "import/extensions": [
             "error",
             "ignorePackages",
